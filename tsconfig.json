@@ -21,5 +21,8 @@
     "noFallthroughCasesInSwitch": true
   },
   "include": ["./src"],
+  "paths": {
+    "data.handler": ["./data/handler.js"]
+  },
   "references": [{ "path": "./tsconfig.node.json" }]
 }
