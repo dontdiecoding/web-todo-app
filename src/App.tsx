@@ -32,10 +32,14 @@ export default function App() {
     },
   ]);
 
+  if (router.state.location.pathname === "/") {
+    router.navigate("/dashboard");
+  }
+
   return (
     <>
       <nav className="flex items-center px-3 h-16 justify-between border-b-2 border-stone-900">
-        <a href="/dashboard" className="text-2xl selection:invisible hover:cursor-pointer font-bold bg-gradient-to-r from-red-600 via-orange-500 to-yellow-400 inline-block text-transparent bg-clip-text">web-todo-app</a>
+        <a href="/" className="text-2xl selection:invisible hover:cursor-pointer font-bold bg-gradient-to-r from-red-600 via-orange-500 to-yellow-400 inline-block text-transparent bg-clip-text">web-todo-app</a>
         <div className="flex nav-items">
           
           <a className="flex text-lg px-2 py-2 text-stone-900 hover:text-stone-500" href="/dashboard"><UserIcon className="pr-2 h-6" />Dashboard</a>
