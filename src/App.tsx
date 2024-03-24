@@ -38,19 +38,25 @@ export default function App() {
 
   return (
     <>
-      <nav className="flex items-center px-3 h-16 justify-between border-b-2 border-stone-900">
-        <a href="/" className="text-2xl selection:invisible hover:cursor-pointer font-bold bg-gradient-to-r from-red-600 via-orange-500 to-yellow-400 inline-block text-transparent bg-clip-text">web-todo-app</a>
-        <div className="flex nav-items">
+
+    <div className="flex p-4 h-screen">
+      <nav className="flex flex-col sticky rounded-lg p-4 bg-stone-900">
+        <a href="/" className="text-2xl selection:invisible hover:cursor-pointer font-bold bg-gradient-to-r from-red-400 via-orange-300 to-yellow-400 inline-block text-transparent bg-clip-text">web-todo-app</a>
+        
+        <div id="bottom-links" className="flex flex-col justify-start h-full">
           
-          <a className="flex text-lg px-2 py-2 text-stone-900 hover:text-stone-500" href="/dashboard"><UserIcon className="pr-2 h-6" />Dashboard</a>
-          <a className="flex text-lg px-2 py-2 text-stone-900 hover:text-stone-500" href="/timeline"><MapIcon className="pr-2 h-6" />Timeline</a>
-          <a className="flex text-lg px-2 py-2 text-stone-900 hover:text-stone-500" href="/views"><Square3Stack3DIcon className="pr-2 h-6"/>Views</a>
-          <a className="flex text-lg pl-2 py-2 text-stone-900 hover:text-stone-500" href="/settings"><Cog6ToothIcon className="pr-2 h-6"/>Settings</a>
+          <a className="flex text-lg px-2 py-2 text-stone-100 hover:text-stone-300" href="/dashboard"><UserIcon className="pr-2 h-6" />Dashboard</a>
+          <a className="flex text-lg px-2 py-2 text-stone-100 hover:text-stone-300" href="/timeline"><MapIcon className="pr-2 h-6" />Timeline</a>
+          <a className="flex text-lg px-2 py-2 text-stone-100 hover:text-stone-300" href="/views"><Square3Stack3DIcon className="pr-2 h-6"/>Views</a>
+        </div>
+        
+        <div id="bottom-links" className="flex flex-col justify-end h-full">
+          <a className="flex text-lg pl-2 py-2 text-stone-100 hover:text-stone-300" href="/settings"><Cog6ToothIcon className="pr-2 h-6"/>Settings</a>
         </div>
       </nav>
 
       <RouterProvider router={router} />
-      
+      </div>
     </>
   );
 
