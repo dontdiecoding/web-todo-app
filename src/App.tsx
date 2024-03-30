@@ -40,7 +40,7 @@ export default function App() {
     <>
 
     <div className="flex p-4 h-screen">
-      <nav className="flex flex-col sticky rounded-lg p-4 bg-stone-900">
+      <nav className="flex flex-col shrink-0 sticky rounded-lg p-4 bg-stone-900">
         <a href="/" className="text-2xl selection:invisible hover:cursor-pointer font-bold bg-gradient-to-r from-red-400 via-orange-300 to-yellow-400 inline-block text-transparent bg-clip-text">web-todo-app</a>
         
         <div id="bottom-links" className="flex flex-col justify-start h-full">
@@ -55,7 +55,10 @@ export default function App() {
         </div>
       </nav>
 
-      <RouterProvider router={router} />
+      <div className="mx-4 w-full">
+        <RouterProvider router={router} />
+      </div>
+      
       </div>
     </>
   );

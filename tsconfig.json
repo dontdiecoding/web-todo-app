@@ -22,7 +22,7 @@
   },
   "include": ["./src"],
   "paths": {
-    "database": ["data/db.ts"]
+    "database": ["data/handler.ts"]
   },
   "references": [{ "path": "./tsconfig.node.json" }]
 }

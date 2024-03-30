@@ -7,8 +7,24 @@
   line-height: 1.5;
   font-weight: 400;
 
+  @apply text-stone-900;
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headings and Text */
+
+h1 {
+  @apply text-2xl font-black;
+}
+
+h2 {
+  @apply text-lg font-bold;
+}
+
+h3 {
+  @apply text-base font-semibold;
 }
